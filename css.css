@@ -1,0 +1,1050 @@
+/* estilos generales */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(115, 115, 115); 
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+}
+p {
+    font-family: sans-serif;
+}
+
+
+header .contenedor {
+    margin: 0 30px;
+}
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    
+}
+/* MENU HEADER  */
+header .contenedorHeader {
+    margin:auto;
+    display: flex;
+    
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;  
+    flex-direction: column;
+    
+}
+header a{  
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+    text-decoration: none;
+}
+.linksMenu  ul li{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: none;
+    
+    }
+.linksMenu ul {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+nav a:hover{
+    color:grey;
+}
+ .logoMenu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoMenu img{
+    display:flex;
+    justify-content: center;
+    height: 70px ;
+}
+a {
+    color:rgb(112, 73, 1);
+    
+}
+/* FIN MENU  */
+
+footer{
+    display:flex;
+    text-align: center;
+    margin-top:auto;
+    justify-content: center;
+}
+.divFooter{
+    background-color: rgb(145,145,145); 
+    justify-content: center;
+    align-items: center;    
+}
+
+.divFooter p{
+    font-family: sans-serif;
+    font-size: 12px; 
+    color: black;
+    margin: 10px 15px;
+    }
+
+    .divVolverArriba{
+        display:none;
+    }
+
+
+/* === fin footer ===  */
+
+
+/* EFECTO UNDERLINE  */
+:root {
+    --white: #fff;
+    --bg: #dbebfa;
+    --pink: #9b29b7;
+    --blue-dark: #4763ef;
+    --dark: #0000;
+    /* --font: 'Roboto Mono', sans-serif; */
+}
+
+.underline {
+
+    display: inline-block; 
+    position: relative;
+  }
+  
+  .underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom center;
+    transition: transform 0.2s ease-out;
+  }
+
+  
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+  
+  .underlineNegro {
+   display: inline-block; 
+   position: relative;
+  }
+  
+  .underlineNegro:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform-origin: bottom center;
+    transition: transform 0.2s ease-out;
+  }
+
+  .underlineNegro:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom center;
+  }
+
+  /* FIN EFECTO UNDERLINE  */
+
+
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/intro2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+    font-size: 5vh;
+}
+#heroPersonajes h1{
+    color: white;
+    font-size: 5vh;
+}
+#heroPersonajes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/gif-navidad-theoffice.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#heroTemporadas h1{
+    color: white;
+    font-size: 5vh;
+}
+#heroTemporadas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/michael\ oscar.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* PRIMER SECTION DE INDEX  */
+#officeMain .contenedorImagenMain{
+    display:none;
+}
+
+#officeMain .contenedor {
+    color:rgb(220, 220, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 15px;
+
+    background-color: rgb(26, 26, 26);
+}
+
+/* SECTION MULTIMEDIA DE INDEX */
+
+
+#multimedia .videoMemesYT {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+
+    min-width: 45%;
+    max-width: 660px;
+}
+#multimedia h2 {
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0px;
+}
+#multimedia .parrafoMultimedia{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+}
+
+/* SECTION NOTICIAS DE INDEX  */
+#noticias {
+    background-color: rgb(26, 26, 26);
+    color:rgb(220, 220, 220);
+    padding: 40px 0px;
+}
+#noticias h2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#noticias .divNoticiasIndex{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+    
+}
+#noticias .divNoticiasImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#noticias a{
+    color: rgb(146, 60, 132);
+    text-decoration: none;
+}
+
+/* section dondeVer INDEX HTML */
+
+#dondeVer .contenedor{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin:auto;
+}
+#dondeVer h2{
+    margin-top: 45px;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+ /* AGREGAR EL #dondeVer en caso de q se rompa */
+ .boxImg{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+    border:3px solid gray;
+}
+
+ .boxImg img{
+    width: 100%;
+    height: 100%;
+}
+
+ .capa{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transform: scale(0);
+    transition: 0.3s ease;
+}
+
+ .boxImg:hover .capa{
+    transform:scale(1);
+    
+}
+ /* finde de donde ver */
+
+ 
+ /* fin  section donde ver y animaciones de streams */
+
+  /* PAGINA PELICULA HTML MOBILE  */
+
+#divPelicula h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#divPelicula .posterPelicula{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#divPelicula .posterPelicula:hover{
+    transform: disabled;
+}
+#divPelicula .posterPelicula img{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}    
+
+#divPelicula .articuloPelicula h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+#divPelicula .articuloPelicula p{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: justify; 
+    margin:0 15px ;    
+}
+#divPelicula {
+    padding-bottom: 20px;
+}
+#divSinopsis{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+#divSinopsis h2 {
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#divSinopsis .articuloSinopsis {
+    color:white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-align: justify; 
+    margin:0 15px ;   
+}
+
+#divSinopsis .imagenSinopsis img {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#divSinopsis .imagenSinopsis{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#divSinopsis .imagenSinopsis:hover{
+    transform: disabled;
+}
+#peliculaYT h2 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#peliculaYT .divPeliculaCompleta {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+
+    min-width: 45%;
+    max-width: 660px;
+}
+
+ /* PAGINA CONTACTO.HTML MOBILE */
+ #divMapa {
+ display: inline-block;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ flex-direction: column;
+ height: 80vh;
+ background-image: linear-gradient(
+     0deg,
+     rgba(0,0,0,0.6),
+     rgba(0,0,0,0.6)
+ )
+ ,url("./img/edificioDunderMifflin.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+ 
+ 
+}
+#divMapa h1 {
+    padding-top:10px;
+    color:white;
+    font-size: 5vh;
+}
+#divMapa p{
+    color:white;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+#divMapa .divMapaGoogle iframe{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
+    min-width: 40%;
+    max-width: auto;
+    max-height: 360px;
+    padding-bottom: 50px;
+}
+
+#divRedes h2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#divRedes p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 15px;
+}
+#divRedes .linksRedes img {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 10%;
+}
+#divRedes .linksRedes  {
+    margin: 10px auto;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-rows: 33% 33% 33%;
+}
+
+#divRedes .boxImg{
+    width:50%; 
+    height:50%;
+    margin:auto;
+    padding:auto;
+    border:none;
+}
+
+#divRedes .capa {
+    max-width: 100%;
+    min-width: 10%;
+    margin:auto;
+}
+
+ /* FORMULARIO CONTACTO  */
+label {
+    display: inline-block;
+  } 
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+}
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+}
+ /* FORMULARIO CONTACTO  */
+
+   /* ============= CARDS =============== */
+
+ .containerCards{
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.containerCards .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgb(145,145,145); 
+}
+.containerCards .card-lg{
+    width: 330px;
+    height: 730px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color: rgb(145,145,145); 
+}
+
+.containerCards .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.containerCards .card img{
+    width: 370px;
+    height: 220px;
+}
+
+
+.containerCards .card h4{
+    font-weight: 600;
+}
+
+.containerCards .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.containerCards .card a {
+    font-weight: 500;
+    text-decoration: none;
+    color: #4e006d;
+}
+
+main h1{
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  /* ============= CARDS =============== */
+
+  /* MENU QERY */
+
+  @media (min-width: 882px){
+   
+    header {
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding-left: 30px;
+        
+    }
+        
+    .contenedorHeader {
+        display:flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: center;
+        max-width: 600px;
+        
+    }
+
+    header.logoMenu {
+        display:flex;
+        justify-content: center;
+        
+    } 
+    header .contenedorHeader ul li{
+        margin-right: 20px;
+    }
+    header .contenedorHeader a {
+        font-size: 18px;
+    }
+    header .contenedor{
+        overflow-x: hidden;
+    }
+}
+
+/* VERSION ESCRITORIO INDEX.HTML */
+
+@media (min-width: 720px){
+/* EFECTO TRANSISION  */
+    .transisionImg {
+    transition: all 0.3s;
+    }
+    .transisionImg:hover {
+    transform:scale(1.1);
+    }
+
+  /* FIN EFECTO TRANSISION  */
+
+    .divVolverArriba{
+        display:flex;
+    }
+    .divVolverArriba img{
+        display:flex;
+        margin-right: 10px;
+        width: 35px;
+        display: inline-flex;
+    }   
+
+ /* ========= section hero en index.html ============ */
+    #hero {
+        height: 90vh;
+    }
+    #hero h1{
+        font-size: 15vh;
+    }
+    #heroPersonajes {
+        height: 90vh;
+    }
+    #heroPersonajes h1{
+        font-size: 15vh;
+    }
+    #heroTemporadas {
+        height: 90vh;
+    }
+    #heroTemporadas h1{
+        font-size: 15vh;
+    }
+
+    /* ==== section office main en index.html == */
+    #officeMain{
+        background-color: rgb(26, 26, 26);
+    }
+    #officeMain .contenedorImagenMain Img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    #officeMain .contenedorImagenMain {
+        display: flex;
+        min-width: 45%;
+        max-width: 600px;
+        margin:auto;
+        padding: 0 10px;
+    
+    }
+
+    #officeMain p{
+        text-align: justify;
+        margin: 0 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* MULTIMEDIA EN INDEX.HTML  */
+    #multimedia .contenedor{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin: 80px auto;
+    }
+    #multimedia .parrafoMultimedia {
+        display:inline-block;
+        width: 45%;
+    }
+
+    #multimedia .parrafoMultimedia p{
+        display:inline-block;
+        text-align: justify;
+        margin: 0 30px;
+        align-items: center;
+        justify-content: center;   
+    } 
+    #multimedia .videoMemesYT {
+        display: flex;
+        min-width: 45%;
+        max-width: 660px;
+        margin:auto;
+        padding: 0 10px;
+    }
+
+    /* SECTION NOTICIAS EN INDEX.HTML  */
+
+    #noticias .contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 100px 15px;
+    }
+    #noticias .divNoticiasIndex {
+        display:inline-block;
+    }
+    #noticias .divNoticiasImg Img{
+        width: 100%;
+    }
+    #noticias .divNoticiasImg {
+        display: flex;
+        min-width: 45%;
+        max-width: 600px;
+        margin:auto;
+        /* padding: 0 10px; */
+        
+    }
+
+    #noticias p{
+        display: inline-block;
+        text-align: justify;
+        margin: 0 30px;
+        align-items: center;
+        justify-content: center;
+    }
+ 
+    /* SECTION DONDE VER EN INDEX.HTML  */
+
+    #dondeVer .contenedor {
+        display:flex;
+        
+    }
+    #dondeVer .divVerAhoraLinks {
+        display:flex;
+        flex-direction: row;
+        margin-bottom: 50px;
+        margin-left: -35px;
+        max-width: 900px;
+        margin-right: 20px;
+    }
+    #dondeVer .boxImg {
+        width: 100%;
+        height: 90%;
+    }
+
+    /* ======== PELICULA .HTML =======      */
+    #divPelicula {
+        padding-bottom: 50px;
+    }
+    #divPelicula h1{
+        display:flex;
+        justify-content: center;
+        font-size: 5vh;
+    }
+    #divPelicula .contenedor{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+    }
+    #divPelicula .posterPelicula img{
+        display: inline-block;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    #divPelicula .posterPelicula {
+        display: flex;
+        min-width: 30%;
+        margin:auto;
+    }
+
+    #divPelicula .articuloPelicula {
+        
+        display: inline-block;
+        text-align: justify;
+        margin: 30px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    #divSinopsis {
+        background-color: rgb(26, 26, 26);
+        color: rgb(220, 220, 220);
+        padding: 40px 0px;
+        
+    }
+    #divSinopsis h2 {
+        display: flex;
+        justify-content: flex-start;
+    }
+    #divSinopsis p {
+        color: white;
+        text-align: justify; 
+        padding-right: 50px;
+    }
+
+    #divSinopsis .contenedor{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 30px 15px;
+    }
+    #divSinopsis .imagenSinopsis {
+        display: flex;
+        min-width: 65%;
+        max-width: 600px;
+        margin: auto;
+    }
+    #divSinopsis .imagenSinopsis img {
+        width: 100%;
+        
+    }
+
+    #peliculaYT h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 5vh;
+    }
+    #peliculaYT .divPeliculacompleta  {
+        display: flex;
+    }
+    #peliculaYT {
+        display:flex;
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+
+    /* contacto HTML  */
+    #divRedes .linksRedes  {
+        padding-top: 150px;
+        grid-template-columns: 33% 33% 33%;
+        margin: 0 30px;
+    }
+    #divMapa {
+        display: flex;
+    }
+    #divMapa .divMapaGoogle iframe{
+        display:flex;
+        min-width: 80%;
+        max-width: auto;
+        max-height: 760px;
+        padding-bottom: 50px;
+    }
+    #divRedes .boxImg{
+        width:80%; 
+        height:80%;
+        margin:auto;
+        padding:auto;
+        border:none;
+    }
+    #divRedes .contenedor {
+        max-width: 760px;
+    }
+    /* << fin version escritorio  */
+
+      /* ///////// BAJO CONSTRUCCION - USADO EN PARTES QUE NO SE TERMINARON - no en proyecto final //////////// */
+    #bajoConstruccion {
+        background-color: rgb(115, 115, 115); 
+    }  
+    #bajoConstruccion h1{
+    display:flex;
+    justify-content: center;
+    }
+    #bajoConstruccion .construccionImg {
+        display:flex;
+        margin:auto;
+    }
+    #bajoConstruccion p{
+        display:flex;
+        justify-content: center;
+    }
+  /* ///////// BAJO CONSTRUCCION //////////// */
+    /* formulario */
+    form{
+        font-family: 'Inter Tight';
+        font-weight: 400;
+        font-size: 0.8rem;
+        padding: 1.8rem 0 1.8rem 1.8rem;
+        margin: 1rem auto;
+        max-width: 50%;
+        border: 1px solid black;
+    }
+    fieldset{
+        border: none;
+    }
+    fieldset div:last-child{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    legend{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+        font-family: 'Inter Tight';
+        font-weight: 300;
+        color: black;
+        text-transform: uppercase;
+    }
+    label{
+        color: black;
+        text-transform: uppercase;
+    }
+    input{
+        height: 30px;
+        margin: 0 0 10px 10px;
+        border: 1px solid black;
+        padding: 15px;
+        font-family: 'Inter Tight';
+        font-size: 14px;
+        color: black;
+    }
+    input:focus, textarea:focus{
+        outline: none;
+        border: 1px solid rgb(216, 212, 0);
+    }
+    .btn-send{
+        padding: 0 50px;
+        border: black 2px solid;
+        color: white;
+        font-family: 'Inter Tight';
+        text-transform: uppercase;
+        background-color: black;
+    }
+    .btn-send:hover{
+        background-color: rgb(129, 129, 129);
+        color: black;
+    }
+    svg{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    textarea {
+        resize: none;
+        margin-left: 10px;
+      }
+
+    label {
+        display: inline-block;
+      } 
+    .col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .col-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    .col-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
+    }
+    .col-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+    #divFormulario {
+        padding-bottom: 20px;
+    }
+
+  
+
+
+}
+
